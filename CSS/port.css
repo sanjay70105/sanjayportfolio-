@@ -1,0 +1,459 @@
+*{
+  padding:0;
+  border:0;
+}
+body{
+  background: linear-gradient(to right,#000000, #444444e9 );
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+
+  
+}
+@media (max-width: 770px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+.navbar{
+  margin-top:0;
+}
+.to, .nav-link {
+  transition: color 0.3s ease;
+}
+.nav-item a{
+  color: rgb(15, 192, 237);
+    text-decoration: none;
+    font-weight:inherit;
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px; 
+}
+.nav-item a:hover{
+  transform: scale(1.0 ); 
+  background-color: rgba(88, 248, 235, 0.464);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+  border-radius: 10px;
+}
+.nav-link:hover{
+  color:rgb(162, 202, 250);
+
+  }
+.d{
+  color:rgb(236, 227, 227)
+}
+.frt{
+   width:450px;
+  border-radius: 50%;
+
+}
+
+.gg h1,h2{
+    padding:5px;
+}
+.gg p {
+    text-align: justify; 
+    line-height: 1.6; 
+    max-width: 400px;
+  
+  }
+  .small{
+    padding-top:10px;
+    display: flex;
+    column-gap: 30px;
+    padding-bottom:15px;
+  }
+  .small a{
+    color:aliceblue;
+  }
+  .small #a2:hover{
+    color:black;
+    background-color: white;
+    
+    border-radius: 30%;
+  }
+  .small #a1:hover{
+    color:#FCB045;
+    }
+    .small #a3:hover{
+        color:rgb(31, 75, 219);
+        }
+        .small #a4:hover{
+          background-color:white;
+          color:black;
+          padding:2px;
+          border-radius: 50px;
+        }
+        .dim{
+          opacity:0.5;
+        }
+        #about{
+             
+            padding:15px;
+            background-color:cyan;
+            color:black;
+            border-radius: 20px;
+            font-family:"poppins",sans-serif   ;
+            font-weight: bold;
+        }
+        #about:hover{
+            box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 100px cyan;
+        }
+      
+      .thi h1{
+        font-family: "Sofia Sans Extra Condensed", sans-serif;
+      }
+    
+  .pb1{
+    width:100%;
+    height:10px;
+  
+  }
+  .about-me{
+  background-color: rgb(214, 224, 233);margin-top:80px;padding:40px;
+    border-radius: 40px;
+    margin-top:150px;
+  }
+  .about-me h1,p{
+    padding:10px;
+  }
+  .about-me h1{
+    color:rgb(147, 43, 212)
+  }
+  .about-me p{
+    color:rgb(9, 2, 2);
+  }
+     
+    .inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    .progress-circle {
+     width:150px;
+     height:150px;
+      border-radius: 50%;
+      background: conic-gradient(rgb(194, 120, 232) 0%,rgb(188, 76, 244) var(--percentage), #e0e0e0 var(--percentage), #ece3e3 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+  }
+  .progress-circle span {
+      position: absolute;
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+.aa{
+  width:100%;
+}
+.thi{
+  margin-top:100px;
+  margin-bottom:20px;
+}
+.pp{
+  margin-top: 140px;
+}
+.skill{
+  margin-top:100px;margin-bottom:100px;color:white;
+}
+.projects{
+  margin-top: 100px;
+   text-align: center;
+   font-family: 'poppins',sans-serif;
+   color: rgba(27, 228, 161, 0.792); 
+   text-shadow: -2px 0 rgb(14, 14, 14), 2px 0 white, 0 2px rgba(146, 142, 142, 0.529), 0 -2px rgb(156, 150, 150);
+   font-family: "Playwrite DE Grund", cursive;
+}
+.portfolio-container .portfolio-box {
+  position: relative;
+  display: flex;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+  overflow: hidden;
+}
+.portfolio-box img {
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  margin-bottom:20px;
+}
+.portfolio-box:hover img {
+  border-radius:40%;
+  transform: scale(1.1);
+  filter: brightness(0.5);
+}
+.portfolio-box .portfolio-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 2rem;
+  opacity: 0;
+  transition: opacity .6s ease, transform .6s ease;
+}
+.portfolio-box:hover .portfolio-layer {
+  opacity: 1;
+}
+.portfolio-layer h4 {
+  color: #a7f01f;
+}
+.portfolio-layer p {
+  color: white;
+  text-align: center;
+}
+.portfolio-layer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-color);
+}
+
+#projects-section {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity .8s ease-out, transform .8s ease-out;
+}
+#projects-section.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+.contact {
+   border-radius: 30px;
+ 
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+
+  color: var(--text-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: .8rem;
+  margin: .7rem 0;
+
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .contact form .input-box input,
+  .contact form textarea {
+      font-size: 0.9rem;
+      padding: 1rem; 
+  }
+}
+
+
+
+
+
+@keyframes slideDown {
+    from {
+        transform: translateX(-100%);
+        
+    }
+    to {
+        transform: translateX(0%);
+       
+       
+    }
+}
+.about-title {
+  font-family: 'Lobster Two', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-description {
+  animation: slideIn 2s ease-in-out;
+}
+.myskill,.pskill,.thi,.skill{
+  animation: slideIn 3s ease-in-out;
+}
+.about-me {
+  background-color: #f9f9f9;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.about-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #0e8db5;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.about-me img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid #0e8db5;
+  border-radius: 50%;
+}
+
+.about-me p {
+  margin-bottom: 15px;
+}
+
+.about-me {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+.about-me.visible {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+#scrollTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 1000;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#scrollTopButton.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+#scrollTopButton.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+footer {
+  background-color: #0e8db5;
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .footer-text {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #f1c40f;
+}
+
+footer p {
+  margin: 0;
+}
+@media screen and (max-width:420px) {
+  
+  h1,h2,h4,h5,h3{
+      font-size: 25px;
+    }
+    
+    
+    p{
+      font-size: 12px;
+    }
+    .thi{
+      margin-top:80px;
+      margin-bottom:20px;
+    }
+    .pp{
+      margin-top:130px;
+    }
+    .skill{
+      margin-top:65px;
+      margin-bottom: 60px;
+    }
+    .frt{
+      width:320px;
+    }
+    
+    .contact form .input-box input {
+      width: 100%;
+  }
+  .footer p {
+    font-size: medium;
+  }
+  
+ 
+  
+    
+}
+
+
